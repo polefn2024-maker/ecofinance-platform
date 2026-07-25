@@ -32,7 +32,7 @@ def convert():
     if not from_code or not to_code:
         return jsonify({"error": "Query params 'from' and 'to' are required"}), 400
     if amount <= 0:
-        return jsonify({"error": "Amount must be greater than 0"}), 400
+        return jsonify({"error": "amount must be greater than zero"}), 400
 
     result = Currency.convert(amount, from_code, to_code)
     if result is None:

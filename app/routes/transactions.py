@@ -71,7 +71,7 @@ def create_transaction():
         return jsonify({"error": "Invalid amount"}), 400
 
     if amount <= 0:
-        return jsonify({"error": "amount must be greater than 0"}), 400
+        return jsonify({"error": "amount must be greater than zero"}), 400
 
     try:
         tx_date = date.fromisoformat(data["date"])

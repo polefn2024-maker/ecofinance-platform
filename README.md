@@ -86,7 +86,7 @@ pytest tests/ -v
 
 All authenticated endpoints require:
 ```
-Authorization: ******
+Authorization: Bearer <your_access_token>
 ```
 
 ### Authentication
